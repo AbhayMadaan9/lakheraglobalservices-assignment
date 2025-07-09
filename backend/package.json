@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.1.0",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "helmet": "^8.1.0",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1",
+    "uuidv4": "^6.2.13"
+  },
+  "name": "seque",
+  "version": "1.0.0",
+  "main": "query.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "migrate": "sequelize db:migrate",
+    "migrate:undo": "sequelize db:migrate:undo",
+    "migrate:undo:all": "sequelize db:migrate:undo:all",
+    "seed": "sequelize db:seed:all",
+    "seed:undo": "sequelize db:seed:undo:all",
+    "model:create": "sequelize model:generate --name",
+    "migration:create": "sequelize migration:generate --name",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/001-mak/Sequelize-Postgres-Database.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/001-mak/Sequelize-Postgres-Database/issues"
+  },
+  "homepage": "https://github.com/001-mak/Sequelize-Postgres-Database#readme",
+  "description": ""
+}
